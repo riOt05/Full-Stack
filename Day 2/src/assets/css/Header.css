@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --blue-gradient: rgb(20 16 94);
+  --green-gradient: #055562;
+}
+#topbar {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+}
+#topbar h2 {
+  float: left;
+  padding-top: 18px;
+  padding-bottom: 13px;
+  margin-left: 20px;
+}
+#topbar ul {
+  float: right;
+  padding-top: 18px;
+  padding-bottom: 13px;
+}
+#topbar ul h3 {
+  display: inline-block;
+  margin-right: 20px;
+}
+#topbar ul h3:hover,
+#topbar ul h3.current {
+  color: #fa8b1c;
+  cursor: pointer;
+}
+.container {
+  /* text-align: center;
+      margin:auto; */
+  max-width: 1110px;
+  margin: auto;
+}
+
+/* remaining css of home page */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+
+  /* background-image: linear-gradient(to top right, rgb(20 16 94), #055562,black); */
+}
+
+.h-video {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 550px;
+  /* margin-top: -10px; */
+  background-image: linear-gradient(
+    to top,
+    black,
+    var(--green-gradient),
+    black
+  );
+}
+
+.h-video video {
+  width: 100%;
+  margin-top: -50px;
+  height: 530px;
+  position: relative;
+  /* margin-left: 20px; */
+  border-radius: 10px;
+}
+.h-text {
+  color: white;
+  margin-left: 150px;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, black, var(--blue-gradient), black);
+}
+.h-container {
+  display: flex;
+  margin-top: 100px;
+}
+/* .frontpage_container{
+  background-image: linear-gradient(to top right, rgb(20 16 94), #055562,black);
+} */
+.events-text {
+  /* color:rgb(0, 0, 0); */
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.frontpage-bottom-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.image_div {
+  width: 350px;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 80px 10px;
+  height: 455px;
+  background-color: black;
+  margin-left: 30px;
+  text-align: center;
+}
+.explore_button {
+  height: 50px;
+  width: 150px;
+  border-radius: 35px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  border: none;
+}
+.explore_button:hover {
+  height: 55px;
+  width: 155px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    var(--green-gradient),
+    var(--blue-gradient)
+  );
+}
+.event-video {
+  height: 150px;
+  /* width:100%; */
+  width: 220px;
+  margin-top: 25px;
+}
+/* .bottom-text{
+  color:white;
+  text-align: center;
+} */
+.div-3 {
+  text-align: center;
+  font-family: cursive;
+}
+/* Define animation keyframes */
+@keyframes moveText {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Apply animation to the text */
+.moving-text {
+  animation: moveText 3s forwards; /* Adjust duration as needed */
+}
+
+.div-3 h2 {
+  font-size: 30px;
+  font-family: cursive;
+}
+.events-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+#events-booking-btn {
+  border-color: black;
+  border-width: 5px;
+  height: 60px;
+  width: 190px;
+  border-radius: 35px;
+  color: black;
+  background-color: rgb(231, 206, 206);
+  font-weight: bold;
+  border: none;
+  position: absolute; /* or relative, depending on the context */
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#events-booking-btn:hover {
+  width: 200px;
+  height: 70px;
+  background-image: linear-gradient(
+    to right,
+    var(--green-gradient),
+    var(--blue-gradient)
+  );
+  color: white;
+}
+@keyframes moveButton {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.moving-button {
+  animation: moveButton 3s forwards;
+  margin-top: 10px;
+}
+
+
+
+
